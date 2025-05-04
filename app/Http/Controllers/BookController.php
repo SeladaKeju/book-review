@@ -18,7 +18,7 @@ class BookController extends Controller
         fn($query, $title) => $query->title($title)
         )->get();
         return view('books.index', [
-            'books' => []
+            'books' => $book,
         ]);
     }
 
